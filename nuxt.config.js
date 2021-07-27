@@ -18,7 +18,7 @@ export default {
   },
   target: 'static',
   router: {
-    base: '/my-profile/dist',
+    base: '/my-profile/',
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
