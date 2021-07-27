@@ -252,7 +252,9 @@
         </p>
       </div>
       <div v-if="skill.key === 'pro'" key="pro">
-        In 2014, I studied programming at SENAI, where I learned:
+        In 2014, I studied programming at
+        <a target="_blank" href="https://sc.senai.br/">SENAI</a>, where I
+        learned:
 
         <v-list dense elevation="5" class="my-2">
           <v-list-item>• HTML</v-list-item>
@@ -265,8 +267,8 @@
         It was only a 1-year course, but it got me in love with coding.
       </div>
       <div v-if="skill.key === 'eng'" key="eng">
-        In 2016, i started graduating in Control and Automation Engineering in
-        UFSC. <br>
+        In 2016, i started graduating in Control and Automation Engineering at
+        <a target="_blank" href="https://ufsc.br/">UFSC.</a> <br>
         Its hard to say everything I'm learning in this university, but I
         separated a few topics that I have knowledge of:
         <v-list dense elevation="5" class="my-2">
@@ -294,6 +296,12 @@
           I understand commits, creating branches, stash, push/pulls, reverting
           things, etc. <br>
           It's an awesome tool to keep every part of the development organized.
+          <br>
+          You can view
+          <a target="_blank" href="https://github.com/hzd-artur/my-profile">
+            this project source code
+          </a>
+          on GitHub
         </p>
       </div>
       <div v-if="skill.key === 'aws'" key="aws">
@@ -311,8 +319,8 @@
       <div v-if="skill.key === 'scrum'" key="scrum">
         <p>
           In the company that I work for, we use
-          <a href="https://clickup.com/">ClickUp</a> for tasks management and
-          Scrum.
+          <a target="_blank" href="https://clickup.com/">ClickUp</a> for tasks
+          management and Scrum.
         </p>
         <p>
           I've been using Scrum since early 2020 and I can say I'm experienced

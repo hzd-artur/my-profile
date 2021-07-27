@@ -72,17 +72,19 @@ export default {
           icon: 'dots-horizontal',
           name: 'Other',
           children: [
-            { icon: 'git', name: 'Git', key: 'git' },
-            { icon: 'aws', name: 'Amazon Web Services', key: 'aws' },
+            { icon: 'git', name: 'Git', key: 'git', exp: 100 },
+            { icon: 'aws', name: 'Amazon Web Services', key: 'aws', exp: 75 },
             {
               icon: 'sitemap',
               name: 'Scrum and Workflow',
               key: 'scrum',
+              exp: 95,
             },
             {
               icon: 'language-markdown',
               name: 'Documentation',
               key: 'doc',
+              exp: 100,
             },
           ],
         },

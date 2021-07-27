@@ -5,7 +5,7 @@
       flat
       :color="$vuetify.theme.dark ? 'rgba(0,0,0,0.2)' : 'rgba(100,100,100,0.4)'"
     >
-      <div class="center-fix m-3">
+      <div class="center-fix m-3 d-md-flex d-none">
 &nbsp;
       </div>
       <v-tabs centered>
@@ -24,7 +24,7 @@
           v-if="$vuetify.theme.dark"
           key="lightmode"
           color="yellow darken-2"
-          class="m-3"
+          class="m-3 d-md-flex d-none"
           fab
           small
           @click="changeDark(false)"
@@ -37,7 +37,7 @@
           v-else
           key="darkmode"
           color="grey"
-          class="m-3"
+          class="m-3 d-md-flex d-none"
           fab
           small
           @click="changeDark(true)"
