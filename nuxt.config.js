@@ -16,6 +16,10 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
+  target: 'static',
+  router: {
+    base: '/my-profile/dist',
+  },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ['bootstrap/dist/css/bootstrap.css'],
