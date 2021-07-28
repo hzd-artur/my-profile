@@ -14,14 +14,12 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/my-profile/favicon.ico' },
-    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   target: 'static',
-  router: {
-    base: '/my-profile/',
-  },
+  // router: {
+  //   base: '/my-profile/',
+  // },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ['bootstrap/dist/css/bootstrap.css'],
