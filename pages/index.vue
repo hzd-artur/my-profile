@@ -71,7 +71,7 @@
         <v-card-title class="primary--text text--lighten-2">
           Overview
         </v-card-title>
-        <v-card-subtitle>What can i to say about me?</v-card-subtitle>
+        <v-card-subtitle>What can i say about me?</v-card-subtitle>
         <v-card-text>
           It's hard to say something about yourself without being self-centered,
           but i'm going to try my best.

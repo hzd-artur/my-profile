@@ -15,13 +15,16 @@
           "
         >
           <v-card-title>
-            <v-icon class="mr-2 d-md-none d-block">
-              mdi-menu
-            </v-icon>
-            <v-icon class="mr-2 d-none d-md-block">
-              mdi-cursor-default-click
-            </v-icon>
-            Select an item to view its information
+            <span class="d-md-none d-block">
+              Click on
+              <v-icon class="mr-2"> mdi-menu </v-icon> button to view skills
+              list
+            </span>
+
+            <span class="d-none d-md-block">
+              <v-icon class="mr-2"> mdi-cursor-default-click </v-icon>
+              Select an item to view its information
+            </span>
           </v-card-title>
         </div>
       </v-card>
