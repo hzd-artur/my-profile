@@ -83,6 +83,11 @@ export default {
       selected: {}
     }
   },
+  mounted() {
+    this.$nuxt.$on('setSkill', (val) => {
+      this.selected = val
+    })
+  },
   methods: {
     ratingMessage(rating) {
       if (rating <= 5) {

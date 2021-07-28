@@ -57,7 +57,13 @@
     >
       <v-subheader>Skills</v-subheader>
 
-      <ListAction v-model="selected" shaped color="primary" :data="data" />
+      <ListAction
+        v-model="selected"
+        shaped
+        color="primary"
+        :data="data"
+        @input="setOpened()"
+      />
     </v-navigation-drawer>
 
     <v-main>
@@ -114,8 +120,8 @@ export default {
     }
   },
   mounted() {
-    this.$nuxt.$on('changeDrawerState', (val) => {
-      this.drawer = val
+    this.$nuxt.$on('changeDrawerState', () => {
+      this.drawer = !this.drawer
     })
 
     // watchs for the Windows (OS) theme to change and sets vuetify theme and localStorage
@@ -142,6 +148,10 @@ export default {
   methods: {
     changeDrawer(val) {
       this.drawer = val
+    },
+    setOpened() {
+      this.$nuxt.$emit('setSkill', this.selected)
+      this.drawer = false
     },
     changeDark(val) {
       this.$vuetify.theme.dark = val

@@ -13,7 +13,17 @@
               color="primary"
               size="200"
             >
-              <v-img src="myself.png" />
+              <v-img src="myself.png">
+                <template #placeholder>
+                  <v-row
+                    class="fill-height ma-0"
+                    align="center"
+                    justify="center"
+                  >
+                    <v-progress-circular indeterminate color="grey lighten-5" />
+                  </v-row>
+                </template>
+              </v-img>
             </v-avatar>
             <div class="ml-5 flex-grow-1">
               <h2 class="primary--text">
@@ -139,9 +149,8 @@ export default {
       navigator.clipboard.writeText(val)
     },
     changeDrawer() {
-      console.log('teste')
       this.drawer = !this.drawer
-      this.$nuxt.$emit('changeDrawerState', this.drawer)
+      this.$nuxt.$emit('changeDrawerState')
     }
   }
 }
