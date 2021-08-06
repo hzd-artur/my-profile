@@ -82,7 +82,6 @@ export default {
   font-size: 2.7rem;
   color: #cccccc;
   font-weight: 300;
-  font-family: 'Georama' !important;
 }
 .flex-logo {
   position: absolute;
