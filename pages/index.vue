@@ -105,7 +105,6 @@ export default {
 .start {
   color: #ef4136;
   font-weight: 300;
-  font-family: 'Oswald' !important;
   position: fixed;
   transform: translate(-50%, -50%);
   top: 50%;
