@@ -191,8 +191,9 @@ export default {
 }
 .svg-star-left {
   position: fixed;
-  transform: translate(0, -50%);
-  top: 50%;
+
+  top: 20%;
+  animation: slowMove 16s ease-in-out 0s infinite alternate;
 
   z-index: -1;
   width: 100px;

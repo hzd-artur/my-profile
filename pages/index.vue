@@ -1,5 +1,5 @@
 <template>
-  <div class="introduction">
+  <div>
     <div class="d-flex flex-logo justify-content-center align-center">
       <v-avatar class="justify-self-center" color="dark" size="200">
         <div class="logo-wrapper">
@@ -12,33 +12,30 @@
           I'm Arthur. <br>
           Welcome to my profile.
         </span>
-        <div class="d-flex d-sm-none justify-center mt-5">
+        <div class="d-flex d-sm-none justify-center my-5">
           <v-btn
             x-large
             fab
             outlined
-            color="primary lighten-2"
+            color="primary "
             :to="{ name: 'profile' }"
           >
-            Start
+            <small> Start </small>
           </v-btn>
         </div>
       </div>
     </div>
-
-    <div>
-      <v-btn
-        class="start d-sm-inline-flex d-none"
-        x-large
-        plain
-        fab
-        outlined
-        color="primary lighten-2"
-        :to="{ name: 'profile' }"
-      >
-        Start
-      </v-btn>
-    </div>
+    <v-btn
+      class="start d-sm-inline-flex d-none"
+      x-large
+      plain
+      fab
+      outlined
+      color="primary lighten-2"
+      :to="{ name: 'profile' }"
+    >
+      Start
+    </v-btn>
   </div>
 </template>
 
@@ -69,6 +66,10 @@ export default {
 </script>
 
 <style scoped>
+.introduction {
+  position: relative;
+  height: 100%;
+}
 .logo-wrapper {
   height: 200px;
   width: 200px;
@@ -92,14 +93,24 @@ export default {
 }
 @media (max-width: 600px) {
   .flex-logo {
+    overflow-x: auto;
     position: absolute;
     width: 90%;
     transform: translate(-50%, 0%);
     top: 54px;
     left: 50%;
     flex-wrap: wrap;
-    padding-bottom: 2rem;
     background: rgba(10, 10, 20, 0.8);
+  }
+}
+@media (max-height: 700px) {
+  .flex-logo {
+    overflow-x: auto;
+    position: absolute;
+    width: 90%;
+    left: 0px;
+    top: 108px;
+    flex-wrap: wrap;
   }
 }
 .start {
@@ -109,6 +120,7 @@ export default {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+  z-index: 10;
   flex-wrap: wrap;
 }
 </style>

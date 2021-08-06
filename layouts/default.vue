@@ -76,39 +76,6 @@
         <Nuxt @changeDrawerState="changeDrawer" />
       </v-expand-transition>
     </v-main>
-
-    <v-footer
-      class="d-flex d-md-none justify-content-end"
-      color="rgba(0,0,0,0)"
-      app
-    >
-      <v-scale-transition leave-absolute group>
-        <v-btn
-          v-if="$vuetify.theme.dark"
-          key="lightmodemobile"
-          color="yellow darken-2"
-          class="m-3"
-          fab
-          small
-          @click="changeDark(false)"
-        >
-          <v-icon color="grey darken-3">
-            mdi-white-balance-sunny
-          </v-icon>
-        </v-btn>
-        <v-btn
-          v-else
-          key="darkmodemobile"
-          color="grey"
-          class="m-3"
-          fab
-          small
-          @click="changeDark(true)"
-        >
-          <v-icon>mdi-weather-night</v-icon>
-        </v-btn>
-      </v-scale-transition>
-    </v-footer>
   </v-app>
 </template>
 
@@ -166,13 +133,10 @@ body {
   font-family: 'Georama' !important;
   overflow-x: hidden !important;
 }
-.center-fix {
-  height: 40px;
-  width: 40px;
+.overflow-hidden {
+  overflow: hidden !important;
 }
-.v-navigation-drawer__border {
-  display: none !important;
-}
+
 .theme--dark.v-application {
   background-color: transparent !important;
   // background-image: url('~assets/Background.png') !important;

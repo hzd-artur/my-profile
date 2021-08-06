@@ -1,6 +1,6 @@
 <template>
-  <div class="row justify-content-center">
-    <div class="col-lg-9 col-xl-8 col-xxl-6 col-sm-10 col-xs">
+  <v-row justify="center">
+    <v-col lg="9" xl="8" xxl="6" sm="10">
       <v-card
         :color="
           $vuetify.theme.dark ? 'rgba(10,10,20,0.8)' : 'rgba(150,150,150,0.9)'
@@ -74,8 +74,8 @@
           </v-row>
         </v-card-text>
       </v-card>
-    </div>
-  </div>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
