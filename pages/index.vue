@@ -8,7 +8,7 @@
       </v-avatar>
       <div class="ml-5 flex-grow-1">
         <span class="profile-head">Hi, <br> </span>
-        <span class="profile-sub text--light">
+        <span class="profile-sub">
           I'm Arthur. <br>
           Welcome to my profile.
         </span>
@@ -69,19 +69,21 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css?family=Georama&display=swap%27');
+
 .logo-wrapper {
   height: 200px;
   width: 200px;
 }
 .profile-head {
-  font-size: 4rem;
-  font-weight: 600;
+  font-size: 3.5rem;
+  font-weight: 800;
   font-family: 'Georama' !important;
   color: #ef4136;
 }
 .profile-sub {
-  font-size: 3rem;
-
+  font-size: 2.7rem;
+  color: #cccccc;
   font-weight: 300;
   font-family: 'Georama' !important;
 }
