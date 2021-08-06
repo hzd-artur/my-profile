@@ -76,14 +76,14 @@ export default {
 .profile-head {
   font-size: 4rem;
   font-weight: 600;
-  font-family: 'Oswald' !important;
+  font-family: 'Georama' !important;
   color: #ef4136;
 }
 .profile-sub {
   font-size: 3rem;
 
   font-weight: 300;
-  font-family: 'Oswald' !important;
+  font-family: 'Georama' !important;
 }
 .flex-logo {
   position: absolute;
