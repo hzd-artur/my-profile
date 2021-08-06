@@ -103,7 +103,7 @@ export default {
     background: rgba(10, 10, 20, 0.8);
   }
 }
-@media (max-height: 700px) {
+@media (max-height: 700px) and (min-width: 600px) {
   .flex-logo {
     overflow-x: auto;
     position: absolute;
