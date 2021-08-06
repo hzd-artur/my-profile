@@ -20,5 +20,6 @@ module.exports = {
     'space-before-function-paren': 0,
     'vue/valid-v-slot': ['error', { allowModifiers: true }],
     'comma-dangle': 0,
+    'nuxt/no-globals-in-created': 0,
   },
 }

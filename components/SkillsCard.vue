@@ -1,10 +1,25 @@
 <template>
   <div class="d-flex">
-    <v-card shaped width="300" class="d-md-block d-none">
+    <v-card
+      :color="
+        $vuetify.theme.dark ? 'rgba(10,10,20,0.8)' : 'rgba(150,150,150,0.9)'
+      "
+      shaped
+      width="300"
+      class="d-md-block d-none"
+    >
       <ListAction v-model="selected" rounded color="primary" :data="data" />
     </v-card>
     <transition name="bounce" mode="out-in">
-      <v-card v-if="!selected.key" key="card1" shaped class="flex-grow-1 ml-2">
+      <v-card
+        v-if="!selected.key"
+        key="card1"
+        :color="
+          $vuetify.theme.dark ? 'rgba(10,10,20,0.8)' : 'rgba(150,150,150,0.9)'
+        "
+        shaped
+        class="flex-grow-1 ml-2"
+      >
         <div
           class="
             d-flex
@@ -28,7 +43,14 @@
           </v-card-title>
         </div>
       </v-card>
-      <v-card v-else-if="selected.key" key="card2" class="flex-grow-1 ml-2">
+      <v-card
+        v-else-if="selected.key"
+        key="card2"
+        :color="
+          $vuetify.theme.dark ? 'rgba(10,10,20,0.8)' : 'rgba(150,150,150,0.9)'
+        "
+        class="flex-grow-1 ml-2"
+      >
         <v-card-title>
           <v-icon class="mr-2 primary--text text--lighten-2">
             mdi-{{ selected.icon }}

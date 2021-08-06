@@ -1,16 +1,21 @@
 <template>
   <v-app dark>
+    <background />
+
     <v-app-bar
       app
       flat
-      :color="$vuetify.theme.dark ? 'rgba(0,0,0,0.2)' : 'rgba(100,100,100,0.4)'"
+      :color="$vuetify.theme.dark ? 'rgba(0,0,0,0.5)' : 'rgba(100,100,100,0.7)'"
     >
-      <div class="center-fix m-3 d-md-flex d-none">
-&nbsp;
-      </div>
+      <v-btn fab plain color="black" :to="{ name: 'index' }">
+        <svg-logo />
+      </v-btn>
       <v-tabs centered>
-        <v-tab :to="{ path: '/' }">
+        <v-tab :to="{ name: 'profile' }">
           Profile
+        </v-tab>
+        <v-tab :to="{ name: 'skills' }">
+          Skills
         </v-tab>
         <v-tab :to="{ path: '/portfolio' }">
           Portfolio
@@ -67,9 +72,9 @@
     </v-navigation-drawer>
 
     <v-main>
-      <v-container>
+      <v-expand-transition>
         <Nuxt @changeDrawerState="changeDrawer" />
-      </v-container>
+      </v-expand-transition>
     </v-main>
 
     <v-footer
@@ -136,13 +141,8 @@ export default {
     const dark = JSON.parse(localStorage.getItem('dark'))
     if (dark != null) {
       this.$vuetify.theme.dark = dark
-    } else if (
-      window.matchMedia &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches
-    ) {
-      this.changeDark(true)
     } else {
-      this.changeDark(false)
+      this.changeDark(true)
     }
   },
   methods: {
@@ -162,8 +162,9 @@ export default {
 </script>
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap%27');
+@import url('https://fonts.googleapis.com/css?family=Georama&display=swap%27');
 body {
-  //  font-family: 'Oswald' !important;
+  font-family: 'Georama' !important;
   overflow-x: hidden !important;
 }
 .center-fix {
@@ -174,8 +175,8 @@ body {
   display: none !important;
 }
 .theme--dark.v-application {
-  background-color: #000 !important;
-  background-image: url('~assets/Background.png') !important;
+  background-color: transparent !important;
+  // background-image: url('~assets/Background.png') !important;
   background-attachment: fixed !important;
   background-position: 0% !important;
   background-repeat: no-repeat !important;
@@ -183,8 +184,8 @@ body {
   min-height: 500px;
 }
 .theme--light.v-application {
-  background-color: #fff !important;
-  background-image: url('~assets/BackgroundLight.png') !important;
+  background-color: transparent !important;
+  //  background-image: url('~assets/BackgroundLight.png') !important;
   background-attachment: fixed !important;
   background-position: 0% !important;
   background-repeat: no-repeat !important;
@@ -214,12 +215,13 @@ h2 {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: #000;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
+  border-radius: 10px;
 }
 
 /* Handle on hover */

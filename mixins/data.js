@@ -57,7 +57,7 @@ export default {
             { icon: 'image-edit', name: 'Photoshop', key: 'ps', exp: 100 },
             { icon: 'brush', name: 'Illustrator', key: 'il', exp: 90 },
             { icon: 'video', name: 'Premiere', key: 'pr', exp: 65 },
-            { icon: 'volume-high', name: 'Audition', key: 'au', exp: 70 },
+            { icon: 'volume-high', name: 'Audition', key: 'au', exp: 40 },
           ],
         },
         {
@@ -114,12 +114,7 @@ export default {
           title: 'Obscure',
           text: 'This logo is for a eletronic music producer. <br> The logo resembles the "OC" (abbreviation for Obscure)',
         },
-        {
-          src: 'portfolio/gus.png',
-          showInfo: false,
-          title: 'Gus',
-          text: 'This logo was made for a horticultural delivery company.',
-        },
+
         {
           src: 'portfolio/growBot.png',
           showInfo: false,
@@ -137,12 +132,6 @@ export default {
           showInfo: false,
           title: 'Rocket Rise',
           text: 'This image I made for a physics water rocket challange in my university.',
-        },
-        {
-          src: 'portfolio/ufscBlumenau.png',
-          showInfo: false,
-          title: 'Stammtisch',
-          text: 'This image was the logo of a science/party event.',
         },
       ],
     }

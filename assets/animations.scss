@@ -1,0 +1,86 @@
+@keyframes slowTilt {
+    from {
+      transform: translate(0, 0) rotate(0);
+    }
+    25% {
+      transform: translate(0%, -2%) rotate(10deg);
+    }
+    50% {
+      transform: translate(-2%, -2%) rotate(30deg);
+    }
+    75% {
+      transform: translate(-2%, 0%) rotate(10deg);
+    }
+    to {
+      transform: translate(0, 0%) rotate(0);
+    }
+  }
+  @keyframes slowMove {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(0, 10%) 
+    }
+  }
+  @keyframes comet {
+    from {
+        top: -20%;
+        right: -20%;
+    }
+    10% {
+        top: 120%;
+        right: 120%; 
+    }
+    
+    to {
+        top: 120%;
+        right: 120%; 
+    }
+  }
+
+  @keyframes pulse {
+    from {
+        fill-opacity: 0;
+    }
+    to {
+        fill-opacity: 1;
+        }
+  }
+
+  @keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+         transform: rotate(360deg);
+        }
+  }
+  
+  @keyframes orbit {
+    from {
+       transform:  translate(150%, -50%);
+
+    }
+    to {
+         transform: translate(-250%, -50%);
+        }
+  }
+  @keyframes switchIndex {
+    from {
+      z-index: 2;
+    }
+      
+    50% {
+  z-index: 2;
+      }
+      51% {
+  z-index: 0;
+
+      }
+      
+ 
+    to {
+        z-index: 0;
+        }
+  }

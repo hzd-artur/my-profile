@@ -17,13 +17,13 @@
       <div v-else-if="skill.key === 'css'" key="css">
         <p>I learned CSS alongside HTML and JS, so yeah, since 2014.</p>
         <p>
-          Remember when i said that i had a love-hate relationship with
-          programming? <br>
-          CSS fits perfectly in this matter. <br>
-          I am very experienced with it. But sometimes I get really frustrated
-          when things don't function the way i planned. I always try to keep
-          layouts and designs flexible and beautiful. It's hard but is worth the
-          effort.
+          I can say i have a love-hate relationship with CSS. I am very
+          experienced with it. But sometimes I get really frustrated when things
+          don't function the way I planned.
+        </p>
+        <p>
+          I always try to keep layouts and designs flexible and beautiful. It's
+          hard but is worth the effort.
         </p>
         <p>
           In early 2020, I discovered FlexBox and Css Grid and started using it.
@@ -32,6 +32,7 @@
           I like to make interactive webpages to ensure that the user will enjoy
           every second spent on my website.
         </p>
+        <p>This website's background was made using CSS animations.</p>
       </div>
       <div v-else-if="skill.key === 'js'" key="js">
         <p>
@@ -218,7 +219,6 @@
           Most of my work in PhotoShop is for picture editing and collage.
         </p>
         <p>In 2020, I started using it as a tool for developing web pages.</p>
-        <p>This background was made using PhotoShop only.</p>
       </div>
       <div v-if="skill.key === 'il'" key="il">
         <p>
@@ -226,8 +226,12 @@
           I've been using it for logo creation and designing icons.
         </p>
         <p>
-          I like making icons in Illustrator, converting them to SVG code, and
-          putting them on web pages.
+          This website's planets were made using Illustrator. <br>
+          Each one of the planets is a svg code based on
+          <a
+            target="_blank"
+            href="https://www.vecteezy.com/vector-art/190741-ultra-violet-galactic-background-free-vector"
+          >Star Vectors by Vecteezy</a>
         </p>
       </div>
       <div v-if="skill.key === 'pr'" key="pr">
@@ -256,7 +260,14 @@
         <a target="_blank" href="https://sc.senai.br/">SENAI</a>, where I
         learned:
 
-        <v-list dense elevation="5" class="my-2">
+        <v-list
+          :color="
+            $vuetify.theme.dark ? 'rgba(10,10,20,0.8)' : 'rgba(150,150,150,0.9)'
+          "
+          dense
+          elevation="5"
+          class="my-2"
+        >
           <v-list-item>• HTML</v-list-item>
           <v-list-item>• CSS</v-list-item>
           <v-list-item>• JavaScript</v-list-item>
@@ -267,11 +278,19 @@
         It was only a 1-year course, but it got me in love with coding.
       </div>
       <div v-if="skill.key === 'eng'" key="eng">
-        In 2016, i started graduating in Control and Automation Engineering at
+        In 2016, i started graduating in
+        <b> Control and Automation Engineering</b> at
         <a target="_blank" href="https://ufsc.br/">UFSC.</a> <br>
         Its hard to say everything I'm learning in this university, but I
         separated a few topics that I have knowledge of:
-        <v-list dense elevation="5" class="my-2">
+        <v-list
+          :color="
+            $vuetify.theme.dark ? 'rgba(10,10,20,0.8)' : 'rgba(150,150,150,0.9)'
+          "
+          dense
+          elevation="5"
+          class="my-2"
+        >
           <v-list-item>• Calculus </v-list-item>
           <v-list-item>• Physics</v-list-item>
           <v-list-item>• Algebra</v-list-item>

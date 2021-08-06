@@ -1,5 +1,10 @@
 <template>
-  <v-list :dense="dense" :shaped="shaped" :rounded="rounded">
+  <v-list
+    color="rgba(0,0,0,0)"
+    :dense="dense"
+    :shaped="shaped"
+    :rounded="rounded"
+  >
     <v-list-group
       v-for="item in data"
       :key="'parent-' + item.name"

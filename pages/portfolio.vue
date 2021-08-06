@@ -1,7 +1,14 @@
 <template>
   <div class="row justify-content-center">
     <div class="col-lg-9 col-xl-8 col-xxl-6 col-sm-10 col-xs">
-      <v-card class="mx-1" elevation="6" shaped>
+      <v-card
+        :color="
+          $vuetify.theme.dark ? 'rgba(10,10,20,0.8)' : 'rgba(150,150,150,0.9)'
+        "
+        class="mx-1 mt-2"
+        elevation="6"
+        shaped
+      >
         <v-card-title class="primary--text text--lighten-2">
           Portfolio
         </v-card-title>

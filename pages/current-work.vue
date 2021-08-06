@@ -1,7 +1,14 @@
 <template>
   <div class="row justify-content-center">
     <div class="col-lg-9 col-xl-8 col-xxl-6 col-sm-10 col-xs">
-      <v-card class="mx-1" elevation="6" shaped>
+      <v-card
+        :color="
+          $vuetify.theme.dark ? 'rgba(10,10,20,0.8)' : 'rgba(150,150,150,0.9)'
+        "
+        class="mx-1 mt-3"
+        elevation="6"
+        shaped
+      >
         <v-card-title class="primary--text text--lighten-2">
           My current job
         </v-card-title>
@@ -14,12 +21,34 @@
             where I develop the Front-end of the system. I really like to work
             there, but I feel like remote work is my area.
           </p>
-          In this company we sell a real estate management system with automatic
-          billing to tenants and automatic payment for owners.
+          <p>
+            In this company, we sell a real estate management system with
+            automatic billing to tenants and automatic payment for owners.
+          </p>
+          <p>
+            Here i was responsible for the front-end development where I made:
+            <br>
+            - Part of the financial system (creating bills). <br>
+            - Property registration.<br>
+            - Lease registration.<br>
+            - Client management.<br>
+            - Dynamic Website creation (letting the user customize his
+            website).<br>
+          </p>
+          <p>
+            Nowadays I'm working in a new project for Imobia, for updating the
+            view and design of the system (also organizing code).
+          </p>
+
+          <p>All this using Vue.</p>
+
           <div class="d-flex justify-content-center mt-3">
-            <a target="_blank" href="https://useimobia.com.br/">
+            <a
+              :class="$vuetify.theme.dark ? '' : 'grey darken-3 rounded-lg p-3'"
+              target="_blank"
+              href="https://useimobia.com.br/"
+            >
               <v-img
-                :class="$vuetify.theme.dark ? '' : 'grey rounded-lg'"
                 elevation="5"
                 src="https://useimobia.com.br/img/logo-white.png"
                 max-width="250"

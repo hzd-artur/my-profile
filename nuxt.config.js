@@ -2,6 +2,11 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+
+  // server: {
+  //   port: 8080, // default: 3000
+  //   host: '0.0.0.0', // default: localhost
+  // },
   head: {
     titleTemplate: 'Arthur Wegner Wippel',
     title: 'Arthur Wegner Wippel',
@@ -14,7 +19,11 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+      { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+    ],
+    script: [{ src: 'https://unpkg.com/rive-js@0.7.16/dist/rive.min.js' }],
   },
   target: 'static',
   // router: {
@@ -22,10 +31,9 @@ export default {
   // },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['bootstrap/dist/css/bootstrap.css'],
+  css: ['~/assets/animations.scss', 'bootstrap/dist/css/bootstrap.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
