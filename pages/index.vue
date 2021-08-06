@@ -69,8 +69,6 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css?family=Georama&display=swap%27');
-
 .logo-wrapper {
   height: 200px;
   width: 200px;
@@ -78,7 +76,6 @@ export default {
 .profile-head {
   font-size: 3.5rem;
   font-weight: 800;
-  font-family: 'Georama' !important;
   color: #ef4136;
 }
 .profile-sub {
