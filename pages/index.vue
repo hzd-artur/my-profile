@@ -93,12 +93,11 @@ export default {
 }
 @media (max-width: 600px) {
   .flex-logo {
-    overflow-x: auto;
-    position: absolute;
-    width: 90%;
-    transform: translate(-50%, 0%);
-    top: 54px;
-    left: 50%;
+    overflow-y: auto;
+    position: inherit;
+    transform: translate(0%, 0%);
+
+    width: 100%;
     flex-wrap: wrap;
     background: rgba(10, 10, 20, 0.8);
   }

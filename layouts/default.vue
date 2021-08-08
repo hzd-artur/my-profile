@@ -71,7 +71,7 @@
       />
     </v-navigation-drawer>
 
-    <v-main>
+    <v-main class="overflow-hidden">
       <v-expand-transition>
         <Nuxt @changeDrawerState="changeDrawer" />
       </v-expand-transition>
@@ -134,7 +134,7 @@ body {
   overflow-x: hidden !important;
 }
 .overflow-hidden {
-  overflow: hidden !important;
+  overflow: hidden;
 }
 
 .theme--dark.v-application {
