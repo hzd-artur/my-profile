@@ -10,7 +10,7 @@
         shaped
       >
         <v-card-text>
-          <div class="d-flex flex-wrap justify-content-center">
+          <div class="d-flex flex-wrap justify-center">
             <v-avatar
               class="justify-self-center elevation-5"
               color="primary"
@@ -28,11 +28,11 @@
                 </template>
               </v-img>
             </v-avatar>
-            <div class="ml-5 flex-grow-1">
+            <div class="ml-5 grow">
               <h2 class="primary--text">
                 Arthur Wegner Wippel
               </h2>
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-center">
                 <v-icon small class="mr-2">
                   mdi-at
                 </v-icon>
@@ -53,23 +53,25 @@
                   <span>Copy to clipboard</span>
                 </v-tooltip>
               </div>
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-center">
                 <v-icon small class="mr-2">
                   mdi-xml
-                </v-icon> Front-end
-                Mid-level Senior developer
+                </v-icon>
+                Front-end Mid-level Senior developer
               </div>
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-center">
                 <v-icon small class="mr-2">
                   mdi-cake
-                </v-icon> 14/11/1998
+                </v-icon>
+                14/11/1998
               </div>
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-center">
                 <v-icon small class="mr-2">
                   mdi-map-marker
-                </v-icon> Brazil
+                </v-icon>
+                Brazil
               </div>
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-center">
                 <v-icon small class="mr-2">
                   mdi-account-voice
                 </v-icon>
@@ -95,7 +97,7 @@
             </p>
             <p>
               I grew up and found a way to build things as a profession:
-              <br>
+              <br />
               <b> Programming</b>.
             </p>
 
@@ -110,9 +112,9 @@
           </div>
         </v-card-text>
         <v-card-actions class="justify-space-between align-center">
-          <span
-            class="primary--text"
-          >Take a look at my skills if you're interested.</span>
+          <span class="primary--text">
+            Take a look at my skills if you're interested.</span
+          >
           <v-btn :to="{ name: 'skills' }" rounded outlined color="primary ">
             skills
           </v-btn>
@@ -120,7 +122,7 @@
       </v-card>
 
       <v-snackbar v-model="snackbar" color="primary" shaped :timeout="1000">
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-center">
           Copied to clipboard
         </div>
       </v-snackbar>
@@ -137,7 +139,7 @@ export default {
       drawer: false,
       snackbar: false,
 
-      selected: {}
+      selected: {},
     }
   },
 
@@ -149,8 +151,8 @@ export default {
     changeDrawer() {
       this.drawer = !this.drawer
       this.$nuxt.$emit('changeDrawerState')
-    }
-  }
+    },
+  },
 }
 </script>
 

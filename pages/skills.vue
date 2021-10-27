@@ -1,5 +1,5 @@
 <template>
-  <div class="row justify-content-center">
+  <div class="row justify-center">
     <div class="col-lg-9 col-xl-8 col-xxl-6 col-sm-10 col-xs">
       <v-card
         :color="
@@ -10,21 +10,11 @@
         shaped
       >
         <v-card-title class="primary--text text--lighten-2">
-          <v-btn
-            elevation="2"
-            fab
-            color="primary"
-            class="mr-2 d-md-none d-block"
-            small
-            @click="changeDrawer()"
-          >
-            <v-icon>mdi-menu</v-icon>
-          </v-btn>
           Skills
         </v-card-title>
         <v-card-subtitle>What i'm good at!</v-card-subtitle>
         <v-card-text>
-          <skills-card />
+          <skills-card @changeDrawer="changeDrawer()" class="maw-100" />
         </v-card-text>
       </v-card>
     </div>
@@ -40,7 +30,7 @@ export default {
       drawer: false,
       snackbar: false,
 
-      selected: {}
+      selected: {},
     }
   },
 
@@ -52,8 +42,8 @@ export default {
     changeDrawer() {
       this.drawer = !this.drawer
       this.$nuxt.$emit('changeDrawerState')
-    }
-  }
+    },
+  },
 }
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app dark v-touch="{ right: () => touchHandler() }">
     <background />
 
     <v-app-bar
@@ -8,7 +8,9 @@
       :color="$vuetify.theme.dark ? 'rgba(0,0,0,0.5)' : 'rgba(100,100,100,0.7)'"
     >
       <v-btn fab plain color="black" :to="{ name: 'index' }">
-        <svg-logo />
+        <v-avatar>
+          <svg-logo />
+        </v-avatar>
       </v-btn>
       <v-tabs centered>
         <v-tab :to="{ name: 'profile' }">
@@ -88,7 +90,7 @@ export default {
   data() {
     return {
       drawer: false,
-      selected: {}
+      selected: {},
     }
   },
   mounted() {
@@ -113,6 +115,10 @@ export default {
     }
   },
   methods: {
+    touchHandler() {
+      console.log('a')
+      this.drawer = true
+    },
     changeDrawer(val) {
       this.drawer = val
     },
@@ -123,72 +129,7 @@ export default {
     changeDark(val) {
       this.$vuetify.theme.dark = val
       localStorage.setItem('dark', val)
-    }
-  }
+    },
+  },
 }
 </script>
-<style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap%27');
-body {
-  font-family: 'Georama' !important;
-  overflow-x: hidden !important;
-}
-.overflow-hidden {
-  overflow: hidden;
-}
-
-.theme--dark.v-application {
-  background-color: transparent !important;
-  // background-image: url('~assets/Background.png') !important;
-  background-attachment: fixed !important;
-  background-position: 0% !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  min-height: 500px;
-}
-.theme--light.v-application {
-  background-color: transparent !important;
-  //  background-image: url('~assets/BackgroundLight.png') !important;
-  background-attachment: fixed !important;
-  background-position: 0% !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  min-height: 500px;
-
-  background-color: transparent !important;
-}
-.v-application {
-  //font-family: 'Oswald' ;
-  line-height: 1.5;
-}
-.v-card__text {
-  font-size: 1rem !important;
-  line-height: 1.5 !important;
-  font-weight: 300 !important;
-}
-::-webkit-scrollbar {
-  width: 10px;
-}
-h2 {
-  font-size: 2.5rem !important;
-}
-.justify-self-center {
-  justify-self: center;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #000;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-</style>

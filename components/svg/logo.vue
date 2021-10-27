@@ -2,14 +2,14 @@
   <!-- Generator: Adobe Illustrator 25.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
   <!-- Generator: Adobe Illustrator 25.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
   <svg
-    id="Layer_1"
+    id="logo"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     x="0px"
     y="0px"
     viewBox="0 0 500 500"
-    style="enable-background: new 0 0 500 500"
+    style="enable-background: new 0 0 500 500;"
     xml:space="preserve"
   >
     <g>
@@ -37,6 +37,10 @@ export default {}
 </script>
 <style scoped>
 .st0 {
-  fill: #ef4136;
+  fill: #dc793d;
+}
+#logo {
+  width: 100%;
+  height: 100%;
 }
 </style>

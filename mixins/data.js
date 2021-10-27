@@ -94,44 +94,51 @@ export default {
           src: 'portfolio/utopia.png',
           showInfo: false,
           title: 'Utopia',
-          text: "Utopia is a project that I'm currently working on.<br>It's a GTA RolePlay server with a community market.<br>Since GTA's user interface is made on HTML, I'm using Vue + Vuetify for developing the interface.",
+          text:
+            "Utopia is a project I'm currently working on.<br>It's a GTA RolePlay server with a community market.<br>Since GTA's user interface is made on HTML, I'm using Vue + Vuetify for developing the interface.",
         },
         {
           src: 'portfolio/hazard.png',
           showInfo: false,
           title: 'Hazard',
-          text: "This image is a logo that I made for a t-shirt company.<br>The concept was to make a radioactive / chemstry t-shirt brand. That's why I chose Hazard as a name.<br> It resembles a mask with text written on the goggles",
+          text:
+            "This image is a logo I made for a t-shirt company.<br>The concept was to make a radioactive / chemistry t-shirt brand. That's why I chose Hazard as a name.<br> It resembles a mask with text written on the goggles",
         },
         {
           src: 'portfolio/rainDrops.png',
           showInfo: false,
           title: 'Rain Drops',
-          text: 'RainDrops is a homeopathic medicines brand I made for a company.<br>The concept was to make a modern and trustable brand for homeopathic medicines.',
+          text:
+            'RainDrops is a homeopathic medicines brand I made for a company.<br>The concept was to make a modern and trustable brand for homeopathic medicines.',
         },
         {
           src: 'portfolio/obscure.png',
           showInfo: false,
           title: 'Obscure',
-          text: 'This logo is for a eletronic music producer. <br> The logo resembles the "OC" (abbreviation for Obscure)',
+          text:
+            'This logo was made for a eletronic music producer. <br> The logo resembles the "OC" (abbreviation for Obscure)',
         },
 
         {
           src: 'portfolio/growBot.png',
           showInfo: false,
           title: 'Grow Bot',
-          text: 'Grow bot was a project that me and my group made for an automatic plant grower. <br> Basically, we used a circuit board with soil humidity, light and temperature sensors to control the plant development.',
+          text:
+            'Grow bot was a project that me and my group made for an automatic plant grower. <br> Basically, we used a circuit board with soil humidity, light and temperature sensors to control the plant development.',
         },
         {
           src: 'portfolio/entorta.png',
           showInfo: false,
           title: 'Entorta Burro',
-          text: 'This logo me and a group of friends made for an event. <br>It was a college freshman party.<br> In portuguese "Entorta Burro" means "Bend the donkey", where the donkey represents the freshman\'s and "bend" means to get drunk.',
+          text:
+            'This logo was created for an event. <br>It was a college freshman party.<br> In portuguese "Entorta Burro" means "Bend the donkey", where the donkey represents the freshman\'s and "bend" means to get drunk.',
         },
         {
           src: 'portfolio/rocketRise.png',
           showInfo: false,
           title: 'Rocket Rise',
-          text: 'This image I made for a physics water rocket challange in my university.',
+          text:
+            'This image was made for a physics water rocket challange in my university.',
         },
       ],
     }

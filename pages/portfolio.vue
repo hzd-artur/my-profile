@@ -51,7 +51,7 @@
                   v-if="project.showInfo"
                   aspect-ratio="1"
                   class="transition-fast-in-fast-out v-card--reveal"
-                  style="height: 100%"
+                  style="height: 100%;"
                 >
                   <v-card-text class="pb-0">
                     <p class="text-h4 text--primary">
@@ -91,7 +91,7 @@ export default {
       drawer: false,
       snackbar: false,
 
-      selected: {}
+      selected: {},
     }
   },
 
@@ -104,11 +104,10 @@ export default {
       navigator.clipboard.writeText(val)
     },
     changeDrawer() {
-      console.log('teste')
       this.drawer = !this.drawer
       this.$nuxt.$emit('changeDrawerState', this.drawer)
-    }
-  }
+    },
+  },
 }
 </script>
 

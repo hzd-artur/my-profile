@@ -1,0 +1,111 @@
+.h-100 {
+  height: 100%;
+}
+.mih-100 {
+  min-height: 100%;
+}
+.w-100 {
+  width: 100%;
+}
+.v-alert--text {
+  backdrop-filter: blur(8px);
+ 
+}
+.maw-100 {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: 'Aviano';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('~assets/fonts/Aviano.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Redwing';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url('~assets/fonts/Redwing-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Redwing';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('~assets/fonts/Redwing-Medium.ttf') format('truetype');
+}
+.font-aviano {
+  font-family: 'Aviano' !important;
+
+}
+.font-redwing {
+  font-family: 'Redwing' !important;
+  
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap%27');
+body {
+  font-family: 'Georama' !important;
+  overflow-x: hidden !important;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.theme--dark.v-application {
+  background-color: transparent !important;
+  // background-image: url('~assets/Background.png') !important;
+  background-attachment: fixed !important;
+  background-position: 0% !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  min-height: 500px;
+}
+.theme--light.v-application {
+  background-color: transparent !important;
+  //  background-image: url('~assets/BackgroundLight.png') !important;
+  background-attachment: fixed !important;
+  background-position: 0% !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  min-height: 500px;
+
+  background-color: transparent !important;
+}
+.v-application {
+  //font-family: 'Oswald' ;
+  line-height: 1.5;
+}
+.v-card__text {
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+  font-weight: 300 !important;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+h2 {
+  font-size: 2.5rem !important;
+}
+.justify-self-center {
+  justify-self: center;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #DC793D;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #DC793D;
+}

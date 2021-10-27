@@ -1,5 +1,5 @@
 <template>
-  <div class="row justify-content-center">
+  <div class="row justify-center">
     <div class="col-lg-9 col-xl-8 col-xxl-6 col-sm-10 col-xs">
       <v-card
         :color="
@@ -16,7 +16,7 @@
 
         <v-card-text>
           <p>
-            I'm currently working in a company called
+            At present I'm working in a company called
             <a target="_blank" href="https://useimobia.com.br/"> Imobia </a>
             where I develop the Front-end of the system. I really like to work
             there, but I feel like remote work is my area.
@@ -27,13 +27,13 @@
           </p>
           <p>
             Here i was responsible for the front-end development where I made:
-            <br>
-            - Part of the financial system (creating bills). <br>
-            - Property registration.<br>
-            - Lease registration.<br>
-            - Client management.<br>
+            <br />
+            - Part of the financial system (creating bills). <br />
+            - Property registration.<br />
+            - Lease registration.<br />
+            - Client management.<br />
             - Dynamic Website creation (letting the user customize his
-            website).<br>
+            website).<br />
           </p>
           <p>
             Nowadays I'm working in a new project for Imobia, for updating the
@@ -42,7 +42,7 @@
 
           <p>All this using Vue.</p>
 
-          <div class="d-flex justify-content-center mt-3">
+          <div class="d-flex justify-center mt-3">
             <a
               :class="$vuetify.theme.dark ? '' : 'grey darken-3 rounded-lg p-3'"
               target="_blank"
@@ -64,7 +64,7 @@
 
 <script>
 export default {
-  name: 'CurrentWork'
+  name: 'CurrentWork',
 }
 </script>
 

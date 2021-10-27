@@ -18,21 +18,15 @@
           $vuetify.theme.dark ? 'rgba(10,10,20,0.8)' : 'rgba(150,150,150,0.9)'
         "
         shaped
-        class="flex-grow-1 ml-2"
+        class="grow ml-md-2"
       >
         <div
-          class="
-            d-flex
-            h-100
-            colapse-on-animation
-            justify-content-center
-            align-items-center
-          "
+          class="d-flex h-100 colapse-on-animation justify-center align-center"
         >
           <v-card-title>
             <span class="d-md-none d-block">
-              Click on
-              <v-icon class="mr-2"> mdi-menu </v-icon> button to view skills
+              <v-icon left>mdi-gesture-swipe-right </v-icon> Swipe right to view
+              skills <br />
               list
             </span>
 
@@ -49,28 +43,35 @@
         :color="
           $vuetify.theme.dark ? 'rgba(10,10,20,0.8)' : 'rgba(150,150,150,0.9)'
         "
-        class="flex-grow-1 ml-2"
+        :style="
+          $vuetify.breakpoint.mdAndUp
+            ? 'max-width: calc(100% - 300px);'
+            : 'max-width: 100%'
+        "
+        class="grow ml-md-2"
       >
         <v-card-title>
           <v-icon class="mr-2 primary--text text--lighten-2">
-            mdi-{{ selected.icon }}
-          </v-icon>{{ selected.name }}
+            mdi-{{ selected.icon }} </v-icon
+          >{{ selected.name }}
         </v-card-title>
         <v-card-subtitle v-if="selected.exp">
-          <div class="d-flex align-items-center cyan--text">
+          <div class="d-flex align-center cyan--text">
             <v-tooltip dark color="cyan" right>
               <template #activator="{ on, attrs }">
                 <span v-bind="attrs" v-on="on">
                   <v-icon color="cyan"> mdi-head-flash </v-icon>
-                  Experience</span>
+                  Experience</span
+                >
               </template>
-              <span>My experience rating (rated by me). <br>
+              <span
+                >My experience rating (rated by me). <br />
                 <span class="cyan--text text--darken-4">
                   {{ selected.exp }}% = {{ ratingMessage(selected.exp) }}
                 </span>
               </span>
             </v-tooltip>
-            <div class="ml-3 flex-grow-1">
+            <div class="ml-3 grow">
               <v-progress-linear color="cyan" rounded :value="selected.exp" />
             </div>
           </div>
@@ -91,7 +92,7 @@ export default {
   name: 'Skills',
 
   components: {
-    SkillInfo
+    SkillInfo,
   },
   mixins: [data],
   props: {
@@ -102,7 +103,7 @@ export default {
   },
   data() {
     return {
-      selected: {}
+      selected: {},
     }
   },
   mounted() {
@@ -130,8 +131,8 @@ export default {
     },
     setOpened(item) {
       this.selected = item
-    }
-  }
+    },
+  },
 }
 </script>
 <style>
