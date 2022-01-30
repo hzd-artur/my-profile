@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex">
+  <div class="d-flex flex-grow-1">
     <v-card
       :color="
         $vuetify.theme.dark ? 'rgba(10,10,20,0.8)' : 'rgba(150,150,150,0.9)'
@@ -17,24 +17,31 @@
         :color="
           $vuetify.theme.dark ? 'rgba(10,10,20,0.8)' : 'rgba(150,150,150,0.9)'
         "
+        :style="
+          $vuetify.breakpoint.mdAndUp
+            ? 'max-width: calc(100% - 300px);'
+            : 'max-width: 100%'
+        "
         shaped
-        class="grow ml-md-2"
+        class="flex-grow-1 ml-md-2"
       >
         <div
-          class="d-flex h-100 colapse-on-animation justify-center align-center"
+          class="d-flex h-100 w-100 colapse-on-animation justify-center align-center"
         >
-          <v-card-title>
-            <span class="d-md-none d-block">
-              <v-icon left>mdi-gesture-swipe-right </v-icon> Swipe right to view
-              skills <br />
-              list
-            </span>
+          <div class="d-md-none d-flex flex-grow-1">
+            <v-icon class="pa-6" x-large left>mdi-gesture-swipe-right </v-icon>
+            <div class="flex-grow-1">
+              <v-card-title> Swipe right </v-card-title>
+              <v-card-subtitle>
+                To open skill list
+              </v-card-subtitle>
+            </div>
+          </div>
 
-            <span class="d-none d-md-block">
-              <v-icon class="mr-2"> mdi-cursor-default-click </v-icon>
-              Select an item to view its information
-            </span>
-          </v-card-title>
+          <span class="d-none d-md-block">
+            <v-icon class="mr-2"> mdi-cursor-default-click </v-icon>
+            Select an item to view its information
+          </span>
         </div>
       </v-card>
       <v-card

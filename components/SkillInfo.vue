@@ -6,59 +6,57 @@
       <div v-if="skill.key === 'html'" key="html">
         <p>
           My history with HTML goes way back. I started developing in this
-          language in 2014 and since then I've been improving my coding skills
-          in it.
+          language in 2014, when I started a Web Design Course, and since then
+          I've been improving my coding skills in it.
         </p>
         <p>
-          Not much to say about HTML. It's a simple language with simple
-          elements.
+          Not much to say about HTML. It's a very straightforward language with
+          simple elements.
         </p>
       </div>
       <div v-else-if="skill.key === 'css'" key="css">
         <p>I learned CSS alongside HTML and JS, so yeah, since 2014.</p>
         <p>
-          I can say i have a love-hate relationship with CSS. I am very
-          experienced with it. But sometimes I get really frustrated when things
-          don't function the way I planned.
+          With CSS I like to use
+          <a href="https://getbootstrap.com/">Bootstrap's</a> idea of separating
+          <a
+            href="https://www.tutorialrepublic.com/css-reference/css3-properties.php"
+            >properties</a
+          >
+          by classes.<br />
         </p>
         <p>
-          I always try to keep layouts and designs flexible and beautiful. It's
-          hard but is worth the effort.
+          Also, I believe that websites needs to be acessible everywhere from
+          any device, and with CSS we can ensure that.
         </p>
         <p>
-          In early 2020, I discovered FlexBox and Css Grid and started using it.
+          I like to make interactive and fluid webpages to ensure that the user
+          will enjoy every second spent on my website.
         </p>
-        <p>
-          I like to make interactive webpages to ensure that the user will enjoy
-          every second spent on my website.
-        </p>
-        <p>This website's background was made using CSS animations.</p>
+        <p>This website's background was made using SVGs + CSS animations.</p>
       </div>
       <div v-else-if="skill.key === 'js'" key="js">
         <p>
-          Like CSS and HTML, i started developing in JavaScript in 2014. <br>
-          I can say that JavaScript has changed a lot over the years and i
-          really enjoy what this language is becoming.
-        </p>
-        <p>
-          It's my favorite language and i'll like it to use it everywhere! (yes,
-          i know. Performance issues).
+          Like CSS and HTML, i started developing in JavaScript in 2014. <br />
+          JavaScript it's by far my favourite language, it has changed a lot
+          over the years and I really enjoy what this language is becoming.
         </p>
         <p>
           I've made scripts for work, college, and personal use. As i code i
-          learn more about it.<br>
+          learn more about it.<br />
           It's hard to say in a few words, everything i know about JavaScript,
-          but i like to consider myself as a Senior JavaScript developer.<br>
+          but i like to consider myself as a Senior JavaScript developer.<br />
         </p>
         <p>
-          I'm used to handle arrays in Js (map, filter, sort, find, etc.) and
-          i'm pretty good at it. Also, event handling is my thing.<br>
+          I'm used to handle arrays in Js (map, filter, sort, find, etc.),
+          making animations, API requets, form validation, error catching and
+          object manipulation.<br />
         </p>
       </div>
       <div v-if="skill.key === 'cpp'" key="cpp">
         <p>
           My first experience with C++ was in 2016 when I started graduating.
-          <br>
+          <br />
           I used it to make simple algorithms and some circuit board codes.
         </p>
         <p>
@@ -77,7 +75,7 @@
           experienced with it.
         </p>
         <p>
-          For me, it's like JavaScript with extra steps. <br>
+          For me, it's like JavaScript with extra steps. <br />
           I don't like it very much, but if it's going to be a standard, I need
           to learn it.
         </p>
@@ -86,9 +84,9 @@
       <div v-if="skill.key === 'lua'" key="lua">
         <p>I started developing in Lua in 2020 Q1.</p>
         <p>
-          I only used it for developing my Vue-Fivem Project. <br>
+          I only used it for developing my Vue-Fivem Project. <br />
           To explain a little what Fivem is, it's a version of Grand Theft Auto
-          5 with code. <br>
+          5 with code. <br />
           You can configure everything in the game with Lua + HTML (Lua for
           scripts, HTML for UI).
         </p>
@@ -100,13 +98,13 @@
       <div v-if="skill.key === 'php'" key="php">
         <p>
           As a Front-end Developer, I don't use Php very often, but I know how
-          it works. <br>
+          it works. <br />
           I started programming in Php in 2014 and made a few projects with it.
         </p>
         <p>
           I think that Php is still only in use because it has spreaded
-          worldwide, but to be honest, I prefer Node.js for Back-end servers
-          (easier and faster).
+          worldwide, but to be honest, I prefer Node.js for Back-end NoSQL
+          servers (easier and faster).
         </p>
       </div>
       <div v-if="skill.key === 'sql'" key="sql">
@@ -115,12 +113,12 @@
           server needs to have a database.
         </p>
         <p>
-          I started using SQL in 2014 alongside database managers. <br>
+          I started using SQL in 2014 alongside database managers. <br />
           I know the syntax, but personally, I prefer to use frameworks like
           Laravel to make changes in databases.
         </p>
         <p>
-          For NoSql, I discovered it in 2020 Q4, and I loved it! <br>
+          For NoSql, I discovered it in 2020 Q4, and I loved it! <br />
           I used NoSql only once in a project, with MongoDB and a Node.js
           Back-end server.
         </p>
@@ -140,7 +138,7 @@
         <p>Vue, my sweet Vue.</p>
         <p>
           I started working with Vue in early 2020, and I use it for every web
-          project. <br>
+          project. <br />
           I have a lot of experience with Vue2 like making dynamic components,
           event handling, VueX, Vue Router, etc.
         </p>
@@ -149,15 +147,19 @@
           code-split, reusing components, and making reactive variables.
         </p>
         <p>
-          This year in the middle of Q2, I started working with Vue3. <br>
-          I'm still not very used to Vue3 syntax, but my development is going
-          well.
+          Last year in the middle of Q2, I started working with Vue3 and I
+          really like its new features and chages, especially the
+          <a
+            href="https://v3.vuejs.org/guide/migration/v-model.html#_2-x-syntax"
+            >multiple v-model</a
+          >
+          feature.
         </p>
       </div>
       <div v-if="skill.key === 'nuxt'" key="nuxt">
         <p>
           I have been working with Nuxt since last year and I like to use it in
-          every Vue project. <br>
+          every Vue project. <br />
           This project uses Nuxt for pages and component management, as well as
           making code simpler.
         </p>
@@ -165,10 +167,14 @@
           I think that all tools that improve the quality of life for
           programmers are a must-have.
         </p>
+        <p>
+          I also like what Nuxt is becomming and already started usign Nuxt3,
+          altough it's not recommended for production.
+        </p>
       </div>
       <div v-if="skill.key === 'vuetify'" key="vuetify">
         <p>
-          Vuetify, for me, is the best component library on the market. <br>
+          Vuetify, for me, is the best component library on the market. <br />
 
           I use it in almost every project and I'm very experienced with it.
         </p>
@@ -176,7 +182,7 @@
       </div>
       <div v-if="skill.key === 'native'" key="native">
         <p>
-          I only used NativeScript once, on an IOT project. <br>
+          I only used NativeScript once, on an IOT project. <br />
 
           I worked with a VueNative framework to make an App to turn on/off the
           lights in my bedroom.
@@ -185,7 +191,7 @@
       </div>
       <div v-if="skill.key === 'bootstrap'" key="bootstrap">
         <p>
-          I've been working with Bootstrap since early 2020. <br>
+          I've been working with Bootstrap since early 2020. <br />
           I like Bootstrap's grid system and class organization. It is really
           easy to develop using this library.
         </p>
@@ -193,9 +199,16 @@
       </div>
       <div v-if="skill.key === 'sass'" key="sass">
         <p>
-          I've been using Sass and Scss since early 2021. <br>
-          I'm not really experienced with it, but I use it for @imports,
-          variables, and loops.
+          I've started a UI framework using Sass/Scss for creating a CSS
+          library, and I really like the power that it gives.
+        </p>
+        <p>
+          I like to use
+          <a
+            href="https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/#what-is-itcss"
+            >ITCSS</a
+          >
+          concept for organizing projects
         </p>
         <p>
           I love that when coding in Sass, you can do a lot of things with a few
@@ -214,7 +227,7 @@
       </div>
       <div v-if="skill.key === 'ps'" key="ps">
         <p>
-          I've been working with PhotoShop since 2015. <br>
+          I've been working with PhotoShop since 2015. <br />
 
           Most of my work in PhotoShop is for picture editing and collage.
         </p>
@@ -222,16 +235,17 @@
       </div>
       <div v-if="skill.key === 'il'" key="il">
         <p>
-          In the middle of 2017, I started working with Illustrator. <br>
+          In the middle of 2017, I started working with Illustrator. <br />
           I've been using it for logo creation and designing icons.
         </p>
         <p>
-          This website's planets were made using Illustrator. <br>
+          This website's planets were made using Illustrator. <br />
           Each one of the planets is a svg code based on
           <a
             target="_blank"
             href="https://www.vecteezy.com/vector-art/190741-ultra-violet-galactic-background-free-vector"
-          >Star Vectors by Vecteezy</a>
+            >Star Vectors by Vecteezy</a
+          >
         </p>
       </div>
       <div v-if="skill.key === 'pr'" key="pr">
@@ -247,7 +261,7 @@
       <div v-if="skill.key === 'au'" key="au">
         <p>
           I started using Adobe's Audition for noise canceling in audio tracks.
-          <br>
+          <br />
           I use it to make the audio sound better.
         </p>
         <p>
@@ -280,7 +294,7 @@
       <div v-if="skill.key === 'eng'" key="eng">
         In 2016, i started graduating in
         <b> Control and Automation Engineering</b> at
-        <a target="_blank" href="https://ufsc.br/">UFSC.</a> <br>
+        <a target="_blank" href="https://ufsc.br/">UFSC.</a> <br />
         Its hard to say everything I'm learning in this university, but I
         separated a few topics that I have knowledge of:
         <v-list
@@ -307,15 +321,15 @@
       </div>
       <div v-if="skill.key === 'git'" key="git">
         <p>
-          I have been working with Git since 2015. <br>
+          I have been working with Git since 2015. <br />
           I use it in my everyday work (with AWS CodeCommit) and use it with
           GitHub in almost every project (university and personal projects).
         </p>
         <p>
           I understand commits, creating branches, stash, push/pulls, reverting
-          things, etc. <br>
+          things, etc. <br />
           It's an awesome tool to keep every part of the development organized.
-          <br>
+          <br />
           You can view
           <a target="_blank" href="https://github.com/hzd-artur/my-profile">
             this project source code
@@ -325,14 +339,14 @@
       </div>
       <div v-if="skill.key === 'aws'" key="aws">
         <p>
-          I started working with AWS in early 2021. <br>
+          I started working with AWS in early 2021. <br />
           On this platform, I worked with CodeCommit, CodeBuild, CodePipeline,
           S3 Buckets, and IAM Policies.
         </p>
         <p>
           Early this year, the company that I work for needed to start a new
           project with an automatic build (when pushing commits) and a
-          subdomain. I had to do this.
+          subdomain. I was assigned to do this.
         </p>
       </div>
       <div v-if="skill.key === 'scrum'" key="scrum">
@@ -342,10 +356,8 @@
           management and Scrum.
         </p>
         <p>
-          I've been using Scrum since early 2020 and I can say I'm experienced
-          with it.
-          <br>
-          From sprints to milestones, I'm used to it all.
+          I've been using Scrum with Sprints since early 2020 and I can say I'm
+          experienced with it.
         </p>
       </div>
       <div v-if="skill.key === 'doc'" key="doc">
@@ -369,9 +381,9 @@ export default {
     skill: {
       type: Object,
       required: false,
-      default: () => {}
-    }
-  }
+      default: () => {},
+    },
+  },
 }
 </script>
 <style lang="sass">
